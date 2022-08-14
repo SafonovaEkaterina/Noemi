@@ -1,0 +1,135 @@
+@media(min-width: 1200px) {
+  .burger-menu {
+    display: none;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  .header {
+    width: 100%;
+    background-image: url("../img/banner-bg.jpg");
+  }
+}
+@media(min-width: 641px) and (max-width: 1199px) {
+  h1 {
+    font-size: 2em;
+  }
+  .header {
+    width: 100%;
+    background-image: url("../img/banner-bg-tablet.jpg");
+  }
+  .logo {
+    max-width: 158px;
+    margin-left: 15px;
+    margin-top: 0%;
+    padding-bottom: 70px;
+  }
+  .menu {
+    display: none;
+  }
+  .trend {
+    width: 49%;
+  }
+
+  .trends-post-container {
+    flex-wrap: wrap;
+    margin-right: -2vmax;
+  }
+  .posts {
+    width: 56%;
+    margin-left: 3vmax;
+  }
+  .post_card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-wrapper-flex {
+    justify-content: center;
+}
+.container-wrapper {
+  width: 100%;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: inherit;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product {
+  margin: 0 4% 15px;
+}
+}
+@media(min-width: 360px) and (max-width: 640px) {
+  h1 {
+    font-size: 1.9em !important;
+    margin-top: 35px !important;
+  }
+  .header {
+    background-image: url("../img/banner-mobile.jpg");
+  }
+ 
+  .header_title {
+    max-width: 350px;
+    padding-bottom: 250px;
+
+  }
+  .burger-menu {
+    position: absolute;
+    right: 0;
+  }
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: relative;
+  }
+
+  .logo {
+    width: 100%;
+    margin-top: 183px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .header-title h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .trend {
+    width: 100%;
+  }
+  .trends-post-container {
+    flex-wrap: wrap;
+  }
+  .container-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+  .post_card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .side_bar {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4vmax;
+  }
+  .last_post_title {
+    width: 100%;
+  }
+  .form_search_button {
+    left: 450px;
+  }
+  .products {
+    flex-wrap: wrap;
+  }
+  .product {
+    margin-top: 2vmax;
+  }
+}
