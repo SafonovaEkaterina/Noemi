@@ -12,29 +12,52 @@
 }
 @media(min-width: 641px) and (max-width: 1199px) {
   h1 {
-    font-size: 2em;
+    font-size: 2.5em !important;
   }
   .header {
     width: 100%;
     background-image: url("../img/banner-bg-tablet.jpg");
   }
+  .header_title {
+    padding: 5%;
+    padding-bottom: 15%;
+    line-height: 1.4;
+  }
   .logo {
     max-width: 158px;
-    margin-left: 15px;
-    margin-top: 0%;
-    padding-bottom: 70px;
+    margin-left: 22%;
+    margin-top: 10%;
   }
   .menu {
     display: none;
   }
+  .burger-menu {
+    margin-right: 4%;
+    margin-top: 3%;
+  }
+  .trends-title {
+    margin-top: 4.6%;
+    margin-bottom: 2%;
+  }
+  .trends-title-link {
+    font-size: 18px;
+  }
   .trend {
     width: 49%;
+    height: 247px;
   }
 
   .trends-post-container {
     flex-wrap: wrap;
     margin-right: -2vmax;
   }
+  .trend-content {
+    padding: 40px 15px 22px 32px;
+  }
+  .trend-title-link {
+    font-size: 16px;
+  }
+
   .posts {
     width: 56%;
     margin-left: 3vmax;
@@ -42,42 +65,100 @@
   .post_card {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 13%;
+  }
+  .post_caption {
+    width: 392px !important;
+  }
+  .post_content {
+    width: 386px;
+  }
+  .post_tag_list {
+    margin-top: 0.6%;
+  }
+  .post_title {
+    width: 100%;
+    margin: 8px 0 27px;
+    font-size: 17.2px;
+  }
+  .post_description {
+    padding-top: 28px;
   }
   .container-wrapper-flex {
-    justify-content: center;
-}
-.container-wrapper {
-  width: 100%;
-}
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: inherit;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.product {
-  margin: 0 4% 15px;
-}
+    justify-content: space-between;
+  }
+  .container {
+    margin-top: 31.6px;
+  }
+  .side_bar {
+    max-width: 296px;
+  }
+  .container-wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  .section_title {
+    padding-right: 19px;
+    margin: 6px 0 27px;
+  }
+  .last_post_card {
+    margin-bottom: 5.5%;
+  }
+  .last_post_card_image {
+    margin-right: 20px;
+  }
+  .section_title_mail {
+    padding-right: 29px;
+  }
+  .form_search_button {
+    left: 221px;
+  }
+  .form_field {
+    width: 91%;
+  }
+  .form_mailing_button {
+    width: 91%;
+  }
+  .shop-title {
+    margin-top: 47px;
+  }
+  .shop-title-link {
+    font-size: 18px;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: inherit;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 26px;
+  }
+  .product {
+    margin: 0 4% 15px;
+  }
+  .social_list {
+    padding-top: 26px;
+    padding-bottom: 0;
+  }
 }
 @media(min-width: 360px) and (max-width: 640px) {
-  h1 {
-    font-size: 1.9em !important;
-    margin-top: 35px !important;
-  }
   .header {
     background-image: url("../img/banner-mobile.jpg");
   }
  
   .header_title {
     max-width: 350px;
-    padding-bottom: 250px;
+    padding-bottom: 209px;
+    font-size: 26px;
+    margin-top: -8%;
+    line-height: 1.45;
 
   }
   .burger-menu {
     position: absolute;
-    right: 0;
+    right: 9px;
+    top: -10px;
   }
   .header-top {
     display: flex;
@@ -88,8 +169,8 @@
   }
 
   .logo {
-    width: 100%;
-    margin-top: 183px;
+    width: 90%;
+    margin-top: 196px;
   }
 
   .menu {
@@ -101,9 +182,29 @@
   }
   .trend {
     width: 100%;
+    height: 231px;
   }
   .trends-post-container {
     flex-wrap: wrap;
+  }
+  .trends-title {
+    margin-top: 8%;
+    margin-bottom: 7%;
+  }
+  .trends-title::after {
+    margin: 5px auto 0;
+  }
+  .trends-title-link {
+    font-size: 16px;
+  }
+  .trend-title-link {
+    font-size: 16px;
+  }
+  .trend-content {
+    padding: 32px 15px 20px 15px;
+  }
+  .container {
+    margin-top: 31.6px;
   }
   .container-wrapper {
     width: 100%;
@@ -112,19 +213,53 @@
   }
   .post_card {
     flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
+    margin-bottom: 12%;
+  }
+  .post_caption {
+    width: 329px;
+  }
+  .post_title {
+    font-size: 16px;
+    margin: 8px 0 13px;
+  }
+  .post_description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 13px;
+    margin: 0;
+    width: 88%;
+  }
+  .post_description_last {
+    padding-top: 0;
   }
   .side_bar {
     width: 100%;
     max-width: 100%;
     margin-top: 4vmax;
   }
+  .section_title {
+    font-size: 16px;
+    margin: 29px 0 29px;
+  }
   .last_post_title {
     width: 100%;
   }
+  .last_post_card {
+    margin-bottom: 5%;
+  }
   .form_search_button {
-    left: 450px;
+    left: 282px;
+  }
+  .side_bar_item:not(:last-child) {
+    margin-bottom: 30px !important;
+  }
+  .section_title_mail {
+    font-size: 16px;
+  }
+  .side_bar_tags_list {
+    width: 340px;
   }
   .products {
     flex-wrap: wrap;

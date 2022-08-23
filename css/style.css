@@ -70,12 +70,6 @@ a {
   opacity: 0.6;
 }
 
-.header_container {
-  display: flex;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .header-top {
     width: 100%;
     display: flex;
@@ -88,14 +82,15 @@ a {
 }
 .logo {
   width: 180px;
-  padding-top: 35px;
+  padding-top: 4px;
 }
 .menu {
-    padding-left: 30%;
+    padding-left: 16.5%;
 }
 .menu_list {
   display: flex;
-  margin-top: 45px;
+  margin-top: 3%;
+  padding-left: 0.6%;
 }
 
 .menu_link {
@@ -143,7 +138,7 @@ a {
     border-radius: 8px;
     width: 23px;
     height: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 .header_title {
@@ -151,10 +146,10 @@ a {
   font-weight: bold;
   font-size: 45px;
   line-height: 1.67;
-  margin: auto;
   max-width: 700px;
-  margin-top: 100px;
+  margin: auto;
   padding-bottom: 126px;
+  padding-top: 3.4%;
 }
 /*=========POPUP============*/
 .popup-block {
@@ -165,7 +160,8 @@ a {
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 4;
-    display: flex;
+    display: none;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
@@ -312,11 +308,11 @@ a {
     appearance: none;
     position: absolute;
 }
-/*-----------PAGE----------*/
 
 /*=========Тренды============*/
 .trends-title {
-    margin-top: 60px;
+    margin-top: 3.1%;
+    margin-bottom: 1.5%;
     text-align: center;
 }
 .trends-title::after {
@@ -324,7 +320,7 @@ a {
     display: block;
     width: 66px;
     height: 4px;
-    margin: 13px auto 0;
+    margin: 10px auto 0;
     background: #e1d9bd;
 }
 .trends-title-link {
@@ -336,7 +332,6 @@ a {
 .trends-post-container {
     display: flex;
     gap: 4px;
-    margin-top: 44px;
 }
 .trend {
     display:flex;
@@ -374,13 +369,13 @@ a {
     display: flex;
     align-items: flex-end;
     width: 100%;
-    padding: 20px 16px;
+    padding: 18px 19px;
     z-index: 1;
 }
   
 .trend-content {
     border: 3px solid #b59f5b;
-    padding: 33px 0 30px 22px;
+    padding: 42px 15px 32px 32px;
     width: 100%;
 }
   
@@ -398,7 +393,7 @@ ul.trend-tag {
 }
   
 .trend-tag li {
-    margin-right: 20px;
+    margin-right: 23px;
 }
 .trend-tag li:hover {
     text-decoration: underline;
@@ -414,7 +409,7 @@ ul.trend-tag {
   
 /*=========Стили основной части============*/
 .container {
-  margin-top: 60px;
+  margin-top: 51.6px;
 }
 
 .container-wrapper {
@@ -435,7 +430,7 @@ ul.trend-tag {
 
 .post_card {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 5.7%;
 }
 
 .post_card:last-child {
@@ -445,6 +440,7 @@ ul.trend-tag {
 .post_image {
   width: 381px;
   margin-right: 30px;
+  margin-top: 9.9px;
 }
 
 .post_caption {
@@ -459,8 +455,8 @@ ul.trend-tag {
 .post_tag_list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 16px;
-  padding: 0;
+  padding: 0;    
+  margin-top: 1.4%;
 }
 
 .post_tag_list_item {
@@ -487,7 +483,7 @@ ul.trend-tag {
   width: 367px;
   font-family: "Open Sans Bold", san-serif;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 8px 0 24px;
   padding: 0;
   text-transform: uppercase;
   line-height: 1.2;
@@ -533,12 +529,12 @@ ul.trend-tag {
   font-weight: normal;
   font-size: 15px;
   line-height: 1.46;
-  padding-top: 52px;
+  padding-top: 45.7px;
   margin: 0;
 }
 
 .post_description_last {
-  padding-top: 13px;
+  padding-top: 9px;
   margin: 0;
 }
 
@@ -561,13 +557,17 @@ ul.trend-tag {
   width: 100%;
 }
 
+.side_bar_item:not(:last-child) {
+  margin-bottom: 55px !important;
+}
+
 .section_title {
   font-family: "Open Sans Bold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   color: #0f0d0e;
-  margin: 0 0 40px;
+  margin: 6px 0 26.5px;
 }
 
 .section_title::after {
@@ -577,13 +577,50 @@ ul.trend-tag {
   background-color: #b59f5b;
   opacity: 0.4;
   display: block;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
+}
+
+.section_title_mail {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f0d0e;
+  margin: 6px 0 16px;
+  padding-right: 5px;
+}
+.section_title_mail::after {
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.section_title_themes {
+  font-family: "Open Sans Bold", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0f0d0e;
+  margin: -5px 0 18px;
+}
+.section_title_themes::after {
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  display: block;
+  margin: 10px auto 0;
 }
 
 .last_post_card {
   display: flex;
   font-family: "Open Sans Regular", sans-serif;
-  margin-bottom: 22px;
+  margin-bottom: 6.7%;
 }
 
 .last_post_card:last-child {
@@ -591,14 +628,14 @@ ul.trend-tag {
 }
 
 .last_post_card_image {
-  width: 71px;
-  margin-right: 19px;
+  width: 70px;
+  margin-right: 15px;
   padding: 0;
   margin-top: 0;
 }
 
 .last_post_image {
-  width: 71px;
+  width: 70px;
   background-color: #f4f7f6;
   padding: 0;
 }
@@ -621,7 +658,6 @@ ul.trend-tag {
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-  padding-top: 4px;
   margin: 0;
 }
 
@@ -637,7 +673,7 @@ ul.trend-tag {
 /*=========FORM SEARCH============*/
 .form_side_bar {
   position: relative;
-  margin-top: 38px;
+  margin-top: 17%;
 }
 
 .form_field {
@@ -645,6 +681,7 @@ ul.trend-tag {
 
   width: 100%;
   padding: 17px;
+  margin-top: 3%;
 
   font-weight: normal;
   font-size: 13px;
@@ -667,7 +704,7 @@ ul.trend-tag {
 
 .form_search_button {
   position: absolute;
-  top: -1px;
+  top: 7px;
   width: 50px;
   height: 50.5px;
   left: 223px;
@@ -688,9 +725,9 @@ ul.trend-tag {
 
 /*=========FORM MAILING============*/
 .form_mailing_button {
-  margin-top: 17px;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  margin-top: 16px;
+  padding-top: 15px;
+  padding-bottom: 13px;
   width: 100%;
   border: none;
 
@@ -730,7 +767,7 @@ ul.trend-tag {
   font-size: 12px;
   color: #0f0d0e;
   border: 3px solid #eeeeee;
-  margin: 0 4px 4px 0;
+  margin: -5px 4px 4px 0;
 }
 
 .side_bar_tag_link:hover {
@@ -746,7 +783,7 @@ ul.trend-tag {
 .side_bar_theme {
   border-bottom: 1px solid #eeeeee;
   padding-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 12px;
   position: relative;
 }
 
@@ -772,11 +809,12 @@ ul.trend-tag {
 /*=========Shop============*/
 .shop-title {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 54px;
+    margin-bottom: 30px;
 }
 .shop-title::after {
     content: "";
-    margin: 13px auto 0;
+    margin: 5px auto 0;
     display: block;
     width: 67px;
     height: 3px;
@@ -790,7 +828,7 @@ ul.trend-tag {
 }
 .products {
     display: flex;
-    padding: 0 20px;
+    padding: 0 100px;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -823,6 +861,7 @@ ul.trend-tag {
   
 .product-title {
     margin-bottom: 10px;
+    margin-top: -10px;
     flex-grow: 1;
 }
 .product-title-link {
@@ -832,7 +871,7 @@ ul.trend-tag {
     color: #0f0d0e;
 }  
 .product-text {
-    margin-bottom: 27px;
+    margin-bottom: 12px;
     font-size: 15px;
     line-height: 22px;
 }
@@ -894,7 +933,7 @@ ul.trend-tag {
   justify-content: center;
   align-items: center;
 
-  padding-top: 31px;
+  padding-top: 44px;
   padding-bottom: 31px;
   margin: 0 auto;
 
@@ -908,9 +947,9 @@ ul.trend-tag {
 
 .social_list_link {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 25px;
-  padding-right: 81px;
+  padding-right: 45px;
 
   background-repeat: no-repeat;
   background-position: center;
