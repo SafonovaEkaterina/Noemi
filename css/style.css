@@ -153,258 +153,269 @@ a {
 }
 /*=========POPUP============*/
 .popup-block {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 4;
-    display: none;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+  /* display: none; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .popup {
-    position: relative;
-    padding: 50px 30px;
-    background-color: #ffffff;
-    max-width: 390px;
+  position: relative;
+  padding: 53px 30px 53px 30px;
+  background-color: #ffffff;
+  max-width: 390px;
 }
 .popup-close {
-    width: 20px;
-    height: 20px;
-    background-image: url(../svg/form-x.svg);
-    background-repeat: no-repeat;
-    display: block;
-    position: absolute;
-    top: -25px;
-    left: 370px;  
+  width: 20px;
+  height: 20px;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: 370px;  
 }
+
 .popup-checkbox:checked + .popup-block {
-    display: none;
+  display: none;
 }
 .popup-checkbox {
-    display: none;
+  display: none;
 }
 .popup-title {
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
+  font-family: "Open Sans Bold", san-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 0 8px;
+  margin: 0;
 }
 .popup-title-link {
-    color: #0f0d0e;
+  color: #0f0d0e;
 }
 .popup-title-link::after {
-    content: "";
-    display: block;
-    width: 66px;
-    height: 4px;
-    margin: 13px auto 0;
-    background: #e1d9bd;
+  content: "";
+  display: block;
+  width: 66px;
+  height: 4px;
+  margin: 9px auto 0;
+  background: #e1d9bd;
 }
 .popup-form-ques {
-    font-size: 13px;
-    color: #000000;
+  font-size: 13px;
+  color: #000000;
 }
 .popup-list {
-    font-family: "Open Sans";
-    width: 100%;
-    height: 7vh;
-    border: 0;
-    font-size: 13px;
-    background-color: #f4f7f6;
-    background-image: url(../svg/form-arrows.svg);
-    background-size: 3% 40%;
-    background-repeat: no-repeat;
-    background-position-x: 95%;
-    background-position-y: center;
-    margin-top: 1.56vmin;
-    padding-left: 2.34vmin;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  font-family: "Open Sans";
+  width: 100%;
+  height: 49px;
+  border: 0;
+  font-size: 13px;
+  background-color: #f4f7f6;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: 3% 40%;
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+  padding: 16px 0 16px 19px;
+  margin-top: 7px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .popup-list:focus {
-    outline: none;
-    border: 1px solid #b59f5b;
+  outline: none;
+  border: 1px solid #b59f5b;
 }
 .popup-form-ques {
-    margin-top: 4.16vmin;
+  margin-top: 29px;
+}
+.popup-form-ques_email {
+  margin-top: 33px;
+}
+.popup-form-ques-text {
+  margin-top: 33px;
 }
 .popup-radio {
-    display: flex;
-    margin-top: 1.56vmin;
+  display: flex;
+  margin-top: 6px;
 }
 
 .radio-block {
-    position: relative;
-    margin-right: 2vmin;
+  position: relative;
+  margin-right: 3vmin;
 }
 
 .radio {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 .radio-label {
-    padding-left: 3.5vmin;
-    font-size: 13px;
+  padding-left: 22px;
+  font-size: 13px;
 }
 .radio-label:before {
-    content: '';
-    background-image: url(../svg/form-empty-circle.svg);
-    background-size: 3vmin 3vmin;
-    background-repeat: no-repeat;
-    display: block;
-    width: 3vmin;
-    height: 3vmin;
-    position: absolute;
-    top: -0.2vmin;
-    left: 0;
+  content: '';
+  background-image: url(../svg/form-empty-circle.svg);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
 }
 
 .radio:checked + .radio-label:before {
-    background-image: url(../svg/form-circle.svg);
+  background-image: url(../svg/form-circle.svg);
 }
 .popup-text {
-    font-family: "Open Sans";
-    width: 100%;
-    height: 16.8vmin;
-    font-size: 13px;
-    resize: none;
-    border: 0;
-    background-color: #f4f7f6;
-    padding: 2.5vmin;
-    box-sizing: border-box;
-    margin-top: 1.56vmin;
+  font-family: "Open Sans";
+  width: 100%;
+  height: 135px;
+  font-size: 13px;
+  resize: none;
+  border: 0;
+  background-color: #f4f7f6;
+  padding: 2.5vmin;
+  padding-top: 22px;
+  box-sizing: border-box;
+  margin-top: 1.56vmin;
 }
 .popup-text:focus {
-    outline: none;
-    border: 1px solid #b59f5b;
+  outline: none;
+  border: 1px solid #b59f5b;
 }
 .popup-button {
-    width: 100%;
-    background-color: #b59f5b;
-    border: 0;
-    margin-top: 3.5vmin;
-    color: white;
-    height: 6vmin;
-    font-family: "Open Sans";
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
+  width: 100%;
+  background-color: #b59f5b;
+  border: 0;
+  margin-top: 25px;
+  color: white;
+  height: 48px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .popup-button:hover {
-    background-color: #0f0d0e;
+  background-color: #0f0d0e;
 }
 
 .popup-checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
 }
 
 /*=========Тренды============*/
 .trends-title {
-    margin-top: 3.1%;
-    margin-bottom: 1.5%;
-    text-align: center;
+  margin-top: 3.1%;
+  margin-bottom: 1.5%;
+  text-align: center;
 }
 .trends-title::after {
-    content: "";
-    display: block;
-    width: 66px;
-    height: 4px;
-    margin: 10px auto 0;
-    background: #e1d9bd;
+  content: "";
+  display: block;
+  width: 66px;
+  height: 4px;
+  margin: 10px auto 0;
+  background: #e1d9bd;
 }
 .trends-title-link {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #0f0d0e;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0f0d0e;
 }
 .trends-post-container {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 }
 .trend {
-    display:flex;
-    width: 100%;
-    height: 321px;
-    background-color: #000000;
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
+  display:flex;
+  width: 100%;
+  height: 321px;
+  background-color: #000000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .trend:after {
-    content: "";
-    position: absolute;
-    background-color: #000000;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    opacity: 0.6; 
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  opacity: 0.6; 
 }
 .tr_post1 {
-    background-image: url("../img/trend1.jpg");
+  background-image: url("../img/trend1.jpg");
 }
 .tr_post2 {
-    background-image: url("../img/trend2.jpg");
+  background-image: url("../img/trend2.jpg");
 }
 .tr_post3 {
-    background-image: url("../img/trend3.jpg");
+  background-image: url("../img/trend3.jpg");
 }
 .tr_post4 {
-    background-image: url("../img/trend4.jpg");
+  background-image: url("../img/trend4.jpg");
 }
 .trend-container {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    padding: 18px 19px;
-    z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 18px 19px;
+  z-index: 1;
 }
   
 .trend-content {
-    border: 3px solid #b59f5b;
-    padding: 42px 15px 32px 32px;
-    width: 100%;
+  border: 3px solid #b59f5b;
+  padding: 42px 15px 32px 32px;
+  width: 100%;
 }
   
 .trend-tag {
-    display: flex;
-    margin-bottom: 15px;
-    color: #b59f5b;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
+  display: flex;
+  margin-bottom: 15px;
+  color: #b59f5b;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
 }
   
 ul.trend-tag {
-    line-height: 7px;
+  line-height: 7px;
 }
   
 .trend-tag li {
-    margin-right: 23px;
+  margin-right: 23px;
 }
 .trend-tag li:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 } 
 .trend-title-link {
-    max-width: 340px;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
+  max-width: 340px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
   
 /*=========Стили основной части============*/
