@@ -167,9 +167,10 @@ a {
 }
 .popup {
   position: relative;
-  padding: 53px 30px 53px 30px;
+  padding: 44px 26px 55px 30px;
   background-color: #ffffff;
   max-width: 390px;
+  box-sizing: border-box;
 }
 .popup-close {
   width: 20px;
@@ -194,7 +195,6 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 0 0 8px;
   margin: 0;
 }
 .popup-title-link {
@@ -235,13 +235,15 @@ a {
   border: 1px solid #b59f5b;
 }
 .popup-form-ques {
-  margin-top: 29px;
+  margin-top: 30px;
 }
 .popup-form-ques_email {
   margin-top: 33px;
+  font-size: 14px;
 }
 .popup-form-ques-text {
   margin-top: 33px;
+  font-size: 14px;
 }
 .popup-radio {
   display: flex;
@@ -282,13 +284,13 @@ a {
 .popup-text {
   font-family: "Open Sans";
   width: 100%;
-  height: 135px;
-  font-size: 13px;
+  height: 120px;
+  font-size: 15px;
   resize: none;
   border: 0;
   background-color: #f4f7f6;
-  padding: 2.5vmin;
-  padding-top: 22px;
+  padding: 2.1vmin;
+  padding-top: 3px;
   box-sizing: border-box;
   margin-top: 1.56vmin;
 }
@@ -322,7 +324,7 @@ a {
 
 /*=========Тренды============*/
 .trends-title {
-  margin-top: 3.1%;
+  margin-top: 3.4%;
   margin-bottom: 1.5%;
   text-align: center;
 }
@@ -337,6 +339,7 @@ a {
 .trends-title-link {
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: -0.5px;
   text-transform: uppercase;
   color: #0f0d0e;
 }
@@ -380,13 +383,14 @@ a {
   display: flex;
   align-items: flex-end;
   width: 100%;
-  padding: 18px 19px;
+  padding: 18px 22px 18px 21px;
   z-index: 1;
 }
   
 .trend-content {
   border: 3px solid #b59f5b;
-  padding: 42px 15px 32px 32px;
+  padding: 39px 33px 32px 34px;
+  box-sizing: border-box;
   width: 100%;
 }
   
@@ -413,7 +417,8 @@ ul.trend-tag {
   max-width: 340px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 22px;
+  letter-spacing: -0.6px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -441,7 +446,7 @@ ul.trend-tag {
 
 .post_card {
   display: flex;
-  margin-bottom: 5.7%;
+  margin-bottom: 6%;
 }
 
 .post_card:last-child {
@@ -494,7 +499,7 @@ ul.trend-tag {
   width: 367px;
   font-family: "Open Sans Bold", san-serif;
   font-size: 20px;
-  margin: 8px 0 24px;
+  margin: 8px 0 29px;
   padding: 0;
   text-transform: uppercase;
   line-height: 1.2;
@@ -793,8 +798,8 @@ ul.trend-tag {
 
 .side_bar_theme {
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px;
-  margin-top: 12px;
+  padding-bottom: 1px;
+  margin-top: 22px;
   position: relative;
 }
 
@@ -839,7 +844,7 @@ ul.trend-tag {
 }
 .products {
     display: flex;
-    padding: 0 100px;
+    padding: 0 210px;
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -861,13 +866,13 @@ ul.trend-tag {
 }
   
 .product-info {
-    border: 3px solid #b59f5b;
-    margin-top: -37px;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 55px 20px 20px;
-    max-width: 340px;
-    flex-grow: 1;
+  border: 3px solid #b59f5b;
+  margin-top: -33px;
+  margin-left: -24px;
+  margin-right: -55px;
+  padding: 59px 22px 22px 25px;
+  max-width: 340px;
+  flex-grow: 1;
 }
   
 .product-title {
@@ -945,7 +950,7 @@ ul.trend-tag {
   align-items: center;
 
   padding-top: 44px;
-  padding-bottom: 31px;
+  padding-bottom: 21px;
   margin: 0 auto;
 
   background-color: #f4f7f6;

@@ -36,11 +36,12 @@
     margin-top: 3%;
   }
   .trends-title {
-    margin-top: 4.6%;
+    margin-top: 5.4%;
     margin-bottom: 2%;
   }
   .trends-title-link {
     font-size: 18px;
+    letter-spacing: 0px;
   }
   .trend {
     width: 49%;
@@ -52,7 +53,7 @@
     margin-right: -2vmax;
   }
   .trend-content {
-    padding: 40px 15px 22px 32px;
+    padding: 35px 55px 25px 28px;
   }
   .trend-title-link {
     font-size: 16px;
@@ -60,12 +61,12 @@
 
   .posts {
     width: 56%;
-    margin-left: 3vmax;
+    margin-left: 3.4vmax;
   }
   .post_card {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 13%;
+    margin-bottom: 13.3%;
   }
   .post_caption {
     width: 392px !important;
@@ -78,7 +79,7 @@
   }
   .post_title {
     width: 100%;
-    margin: 8px 0 27px;
+    margin: 13px 0 30px;
     font-size: 17.2px;
   }
   .post_description {
@@ -184,11 +185,14 @@
     width: 100%;
     height: 231px;
   }
+  .trend-container {
+    padding: 23px 16px 17px 16px;
+  }
   .trends-post-container {
     flex-wrap: wrap;
   }
   .trends-title {
-    margin-top: 8%;
+    margin-top: 9.8%;
     margin-bottom: 7%;
   }
   .trends-title::after {
